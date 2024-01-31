@@ -7,7 +7,7 @@ const Navbar = () => {
   return (
     <div className="w-full h-[10vh] border-b border-white/[.13] border-solid flex justify-between items-center fixed z-20 bg-primary">
       <img
-        src="/logo.png"
+        src="./logo.png"
         alt="Logo"
         className="ml-4 cursor-pointer w-14 h-14"
         onClick={async () => {
