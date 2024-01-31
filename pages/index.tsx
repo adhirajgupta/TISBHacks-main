@@ -111,7 +111,7 @@ export default function Home() {
                     block: "start",
                   });
                 }}
-                onClickCapture={() => window.open("https://tally.so/r/wzYdvZz", "_blank")}
+                onClickCapture={() => window.open("https://tally.so/r/wzYdvZ", "_blank")}
                 className="flex flex-wrap w-[80%] sm:w-auto text-black items-center justify-center px-10 py-2 mt-2 text-xl brightness-[1.2] font-semibold bg-white sm:bg-gradient-to-br from-[#87CEEB] to-[#5F9EA0] rounded-3xl sm:rounded-full cursor-pointer"
               >
                 Registrations Open!
@@ -335,7 +335,7 @@ export default function Home() {
         className="object-contain h-full w-full"
       />
     </div>
-    <div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
+    <div className="bg-white rounded-lg overflow-hidden">
       <img
         src="./images/PrimeCorp Logo.jpg"
         alt="PrimeCorp"
