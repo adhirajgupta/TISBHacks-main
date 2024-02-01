@@ -132,31 +132,32 @@ export default function Home() {
 
         {/* Events */}
         <div className="relative bottom-16" id="events"></div>
-      <div className="flex w-screen h-auto bg-primary mt-16">
-  <div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
-    <h1 className="w-full mb-8 text-6xl font-semibold text-center sm:text-left">
-      Events
-    </h1>
-    <div className="flex flex-col items-start justify-center w-full h-auto gap-4">
-      <MainEvent
+        <div className="flex w-screen h-auto bg-primary mt-16">
+          <div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
+            <h1 className="w-full mb-8 text-6xl font-semibold text-center sm:text-left">
+              Events
+            </h1>
+            <div className="flex flex-col items-start justify-center w-full h-auto gap-4">
+              <MainEvent
+                title="Coding Event"
+                description="Participants will use their programming skills to craft up a working digital product that addresses a real-world problem within the themes of the hackathon. Teams will have 24 hours to collaborate and develop a software solution, using any language, technology stack, or library, except drag-and-drop softwares like Scratch or MIT App Inventor. At the end of the hackathon, teams will present their final product to a panel of judges, showcasing the functionality, usability, and potential impact of their solution."
+              />
+              <MainEvent
+                title="No Code Event"
+                description="Participants in this event will leverage no-code platforms to create a functional digital product. This unique approach allows individuals, including those new to programming, to actively contribute without requiring traditional coding skills. Teams will collaborate, utilizing no-code tools to develop software solutions, with the freedom to choose any software out there. At the end of the hackathon, teams will present their projects to a panel of judges, highlighting the functionality, usability, and impactful outcomes achieved without the need for conventional coding expertise."
+              />
+              <MainEvent
+                title="Code Wars"
+                description="Engage in a competitive challenge by solving problems within a set time frame. Strive to emerge victorious by crafting effective algorithms to address assigned problems.
+Familiarize yourself with the HackerRank platform so that you are comfortable on the day of the contest"
+              />
+              {/* <MainEvent
         title="Coding Event"
         description="Participants will use their programming skills to craft up a working digital product that addresses a real-world problem within the themes of the hackathon. Teams will have 24 hours to collaborate and develop a software solution, using any language, technology stack, or library, except drag-and-drop softwares like Scratch or MIT App Inventor. At the end of the hackathon, teams will present their final product to a panel of judges, showcasing the functionality, usability, and potential impact of their solution."
-      />
-      <MainEvent
-        title="No Code Event"
-        description="Participants in this event will leverage no-code platforms to create a functional digital product. This unique approach allows individuals, including those new to programming, to actively contribute without requiring traditional coding skills. Teams will collaborate, utilizing no-code tools to develop software solutions, with the freedom to choose any software out there. At the end of the hackathon, teams will present their projects to a panel of judges, highlighting the functionality, usability, and impactful outcomes achieved without the need for conventional coding expertise."
-      />
-      <MainEvent
-        title="Algorthmic Hackathon"
-        description="Participants will use their programming skills to craft up a working digital product that addresses a real-world problem within the themes of the hackathon. Teams will have 24 hours to collaborate and develop a software solution, using any language, technology stack, or library, except drag-and-drop softwares like Scratch or MIT App Inventor. At the end of the hackathon, teams will present their final product to a panel of judges, showcasing the functionality, usability, and potential impact of their solution."
-      />
-      <MainEvent
-        title="Coding Event"
-        description="Participants will use their programming skills to craft up a working digital product that addresses a real-world problem within the themes of the hackathon. Teams will have 24 hours to collaborate and develop a software solution, using any language, technology stack, or library, except drag-and-drop softwares like Scratch or MIT App Inventor. At the end of the hackathon, teams will present their final product to a panel of judges, showcasing the functionality, usability, and potential impact of their solution."
-      />
-    </div>
-  </div>
-</div>
+      /> */}
+            </div>
+          </div>
+        </div>
 
 
         {/* Themes */}
@@ -250,7 +251,7 @@ export default function Home() {
                   Mini Events (First place only)
                 </h2>
                 <div className="flex flex-col items-center w-full gap-4">
-                  <PrizeElement text="Algorithmic Hackathon" prize="₹2,000" />
+                  <PrizeElement text="Code Wars" prize="₹2,000" />
                   <PrizeElement text="Trivia" prize="₹2,000" />
                 </div>
               </motion.div>
@@ -327,52 +328,52 @@ export default function Home() {
               </div>
             </div> */}
             <div className="flex flex-col items-start justify-start gap-8 ml-4">
-  <div className="flex flex-col items-start justify-start w-full gap-8 sm:flex-row">
-    <div className="w-full sm:w-52 h-28 bg-white rounded-lg overflow-hidden">
-      <img
-        src="./images/Yadalam.png"
-        alt="Yadalam"
-        className="object-contain h-full w-full"
-      />
-    </div>
-    <div className="bg-white rounded-lg overflow-hidden">
-      <img
-        src="./images/PrimeCorp Logo.jpg"
-        alt="PrimeCorp"
-        width={122}
-        height={28}
-        style={{ objectFit: 'contain' }}
-      />
-    </div>
-    <div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
-      <img
-        src="./images/bren.jpg"
-        alt="bren"
-        className="object-cover h-full w-full"
-      />
-    </div>
-  </div>
-  <div className="flex items-start justify-start w-full gap-8">
-    <div className="bg-black rounded-lg overflow-hidden">
-      <img
-        src="./images/OFG logo-01.jpg"
-        alt="OFG"
-        width={152}
-        height={78}
-        // style={{ objectFit: 'contain' }}
-      />
-    </div>
-    <div className="bg-gray rounded-lg overflow-hidden">
-      <img
-        src="./images/talentfolks_logo.jpg"
-        alt="Talent Folks"
-        width={182}
-        height={78}
-        // style={{ objectFit: 'contain' }}
-      />
-    </div>
-  </div>
-</div>
+              <div className="flex flex-col items-start justify-start w-full gap-8 sm:flex-row">
+                <div className="w-full sm:w-52 h-28 bg-white rounded-lg overflow-hidden">
+                  <img
+                    src="./images/Yadalam.png"
+                    alt="Yadalam"
+                    className="object-contain h-full w-full"
+                  />
+                </div>
+                <div className="bg-white rounded-lg overflow-hidden">
+                  <img
+                    src="./images/PrimeCorp Logo.jpg"
+                    alt="PrimeCorp"
+                    width={122}
+                    height={28}
+                    style={{ objectFit: 'contain' }}
+                  />
+                </div>
+                <div className="w-52 h-28 bg-white rounded-lg overflow-hidden">
+                  <img
+                    src="./images/bren.jpg"
+                    alt="bren"
+                    className="object-cover h-full w-full"
+                  />
+                </div>
+              </div>
+              <div className="flex items-start justify-start w-full gap-8">
+                <div className="bg-black rounded-lg overflow-hidden">
+                  <img
+                    src="./images/OFG logo-01.jpg"
+                    alt="OFG"
+                    width={152}
+                    height={78}
+                  // style={{ objectFit: 'contain' }}
+                  />
+                </div>
+                <div className="bg-gray rounded-lg overflow-hidden">
+                  <img
+                    src="./images/talentfolks_logo.jpg"
+                    alt="Talent Folks"
+                    width={182}
+                    height={78}
+                  // style={{ objectFit: 'contain' }}
+                  />
+                </div>
+              </div>
+            </div>
 
 
             {/* end of sponsors */}
