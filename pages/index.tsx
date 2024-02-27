@@ -140,7 +140,7 @@ export default function Home() {
             <div className="flex flex-col items-start justify-center w-full h-auto gap-4">
               <MainEvent
                 title="Coding Event"
-                description="Participants will use their programming skills to craft up a working digital product that addresses a real-world problem within the themes of the hackathon. Teams will have 24 hours to collaborate and develop a software solution, using any language, technology stack, or library, except drag-and-drop softwares like Scratch or MIT App Inventor. At the end of the hackathon, teams will present their final product to a panel of judges, showcasing the functionality, usability, and potential impact of their solution."
+                description="Participants will use their programming skills to craft up a working digital product that addresses a real-world problem within the themes of the hackathon. Teams will have to collaborate and develop a software solution, using any language, technology stack, or library, except drag-and-drop softwares like Scratch or MIT App Inventor. At the end of the hackathon, teams will present their final product to a panel of judges, showcasing the functionality, usability, and potential impact of their solution."
               />
               <MainEvent
                 title="No Code Event"
