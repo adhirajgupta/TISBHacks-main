@@ -9,6 +9,7 @@ import FAQ, { FAQEnum, FAQProps } from "@/components/FAQ";
 import { FiChevronDown, FiChevronUp } from "react-icons/fi";
 import router from "next/router";
 import Theme from "@/components/Theme";
+import { aboutus } from "@/components/MainEventtexxt";
 
 const inter = Inter({ subsets: ["latin"] });
 
@@ -111,10 +112,10 @@ export default function Home() {
                     block: "start",
                   });
                 }}
-                onClickCapture={() => window.open("https://tally.so/r/wzYdvZ", "_blank")}
+                // onClickCapture={() => window.open("https://tally.so/r/wzYdvZ", "_blank")}
                 className="flex flex-wrap w-[80%] sm:w-auto text-black items-center justify-center px-10 py-2 mt-2 text-xl brightness-[1.2] font-semibold bg-white sm:bg-gradient-to-br from-[#87CEEB] to-[#5F9EA0] rounded-3xl sm:rounded-full cursor-pointer"
               >
-                Registrations Open!
+                Winners Announced!
               </motion.button>
             </div>
 
@@ -141,12 +142,15 @@ export default function Home() {
               <MainEvent
                 title="Coding Event"
                 description="Participants will use their programming skills to craft up a working digital product that addresses a real-world problem within the themes of the hackathon. Teams will have to collaborate and develop a software solution, using any language, technology stack, or library, except drag-and-drop softwares like Scratch or MIT App Inventor. At the end of the hackathon, teams will present their final product to a panel of judges, showcasing the functionality, usability, and potential impact of their solution."
+                image="./images/coding.png"
               />
               <MainEvent
+                image="./images/coding.png"
                 title="No Code Event"
                 description="Participants in this event will leverage no-code platforms to create a functional digital product. This unique approach allows individuals, including those new to programming, to actively contribute without requiring traditional coding skills. Teams will collaborate, utilizing no-code tools to develop software solutions, with the freedom to choose any software out there. At the end of the hackathon, teams will present their projects to a panel of judges, highlighting the functionality, usability, and impactful outcomes achieved without the need for conventional coding expertise."
               />
               <MainEvent
+                image="./images/coding.png"
                 title="Code Wars"
                 description="Engage in a competitive challenge by solving problems within a set time frame. Strive to emerge victorious by crafting effective algorithms to address assigned problems.
 Familiarize yourself with the HackerRank platform so that you are comfortable on the day of the contest"
@@ -258,6 +262,18 @@ Familiarize yourself with the HackerRank platform so that you are comfortable on
             </div>
           </div>
         </div>
+
+				{/* about us */}
+				<div className="flex w-screen h-auto bg-primary mt-16" id="aboutus">
+					<div className="flex flex-col items-center justify-center w-full h-auto px-6 sm:px-8">
+						<h1 className="w-full mb-8 text-6xl font-semibold text-center sm:text-left">
+							About Us
+						</h1>
+						<div className="flex flex-col items-start justify-center w-full h-auto gap-4 ">
+							<MainEvent {...aboutus} image='./images/aboutus.jpg' />
+						</div>
+					</div>
+				</div>
 
         {/* FAQs */}
         <div className="relative bottom-20" id="faqs"></div>
@@ -465,12 +481,15 @@ const PrizeElement = ({ text, prize }: { text: string; prize: string }) => {
   );
 };
 
-const MainEvent = ({
+
+export const MainEvent = ({
   title,
   description,
+  image
 }: {
   title: string;
   description: string;
+  image: string
 }) => {
   return (
     <motion.div
@@ -482,12 +501,12 @@ const MainEvent = ({
         <h2 className="w-full text-3xl font-semibold text-center sm:text-left">
           {title}
         </h2>
-        <p className="mt-4 text-lg text-center sm:text-justify">
+        <p className="mt-4 text-lg text-center sm:text-justify whitespace-pre-line">
           {description}
         </p>
       </div>
       <img
-        src="./images/coding.png"
+        src={image}
         alt="Coding"
         className="hidden sm:block w-[40%]"
       />

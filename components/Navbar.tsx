@@ -1,4 +1,5 @@
 import { useRouter } from "next/router";
+import Link from "next/link";
 
 /* eslint-disable @next/next/no-img-element */
 const Navbar = () => {
@@ -61,12 +62,12 @@ const Navbar = () => {
         <p
           onClick={async () => {
             router.pathname !== "/" && (await router.push("/"));
-            let element = document.getElementById("faqs");
+            let element = document.getElementById("aboutus");
             element?.scrollIntoView({ behavior: "smooth", block: "start" });
           }}
           className="hidden text-white cursor-pointer select-none sm:block"
         >
-          FAQs
+          About Us
         </p>
         <p
           onClick={async () => {
@@ -78,11 +79,18 @@ const Navbar = () => {
         >
           Sponsors
         </p>
+          <Link href="/winners">
+          <p
+            className="hidden text-white cursor-pointer select-none sm:block"
+          >
+            Winners
+          </p>
+        </Link>
         <div
-          onClick={() => { window.open("https://tally.so/r/wzYdvZ", "_blank") }}
+          // onClick={() => { window.open("https://tally.so/r/wzYdvZ", "_blank") }}
           className="hidden sm:block px-6 py-2 mr-8 rounded-full cursor-pointer sm:mr-12 bg-gradient-to-b from-gradientTop to-gradientBottom"
         >
-          Registrations Open!
+          Winners Announced!
         </div>
       </div>
     </div>
