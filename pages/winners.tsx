@@ -24,7 +24,7 @@ const EventsSection: React.FC = () => {
                         </h1>
                         <div className="flex flex-col items-start justify-center w-full h-auto gap-4">
                             <MainEvent title={juniorCode.title} description={juniorCode.description} image='./images/juniorCode.png' />
-                            <MainEvent title={seniorCode.title} description={seniorCode.description} image='./images/music.jpg' />
+                            <MainEvent title={seniorCode.title} description={seniorCode.description} image='./images/seniorCode.png' />
                             <MainEvent title={noCode.title} description={noCode.description} image='./images/noCode.png' />
                             {/* {/* <MainEvent title={event4.title} description={event4.description} image='./images/standup.png' /> */}
                             <MainEvent title={CodeWars.title} description={CodeWars.description} image='./images/coding.jpg' /> 

@@ -56,6 +56,6 @@ Participants will be judged on their adherence to the theme, creativity, emotion
 export const aboutus = {
     title: "TISB HACKS",
     description: 
-"Meet the team of eight, participants in the 4th edition of TISB HACKS. Comprising 11th graders hailing from TISB, our team is driven by a shared passion for computer science. With diverse backgrounds and a wealth of creativity, we unite to tackle challenges and explore innovative solutions. Together, we embody the spirit of collaboration and ingenuity, pushing boundaries and making strides in the world of technology.",
+"Meet the team of eight, organizing the 4th edition of TISB HACKS. Comprising 11th graders hailing from TISB, our team is driven by a shared passion for computer science. With diverse backgrounds and a wealth of creativity, we unite to tackle challenges and explore innovative solutions. Together, we embody the spirit of collaboration and ingenuity, pushing boundaries and making strides in the world of technology.",
 };
 
